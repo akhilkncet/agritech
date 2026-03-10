@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 const CountdownTimer = () => {
-  const targetDate = new Date("2026-03-16T09:00:00");
+  const targetDate = new Date("2026-03-24T09:00:00");
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
@@ -51,7 +51,7 @@ const HeroSection = () => (
         transition={{ duration: 0.8 }}
       >
         <span className="inline-block px-3 py-1.5 rounded-full glass text-[10px] sm:text-xs md:text-sm font-medium text-agri-green mb-4 sm:mb-6 tracking-wider uppercase leading-relaxed">
-          March 16–17, 2026 • Agriculture Innovation Hackathon
+          March 24 - 25 • Agriculture Innovation Hackathon
         </span>
       </motion.div>
 
@@ -75,7 +75,7 @@ const HeroSection = () => (
         transition={{ duration: 0.8, delay: 0.3 }}
         className="text-white/60 text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-4"
       >
-        A two-day agriculture innovation hackathon (March 16–17, 2026), running from 9:00 AM to 5:00 PM each day. Students, developers, engineers, and innovators collaborate to create technological solutions for real agricultural challenges.
+        A two-day agriculture innovation hackathon (March 24-25, 2026), running from 9:00 AM to 5:00 PM each day. Students, developers, engineers, and innovators collaborate to create technological solutions for real agricultural challenges.
       </motion.p>
 
       <motion.div

@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { Trophy, Medal, Award, Lightbulb, Leaf, Cpu } from "lucide-react";
 
 const mainPrizes = [
-  { icon: Trophy, emoji: "🥇", title: "First Prize", amount: "₹5,000", color: "from-yellow-400 to-amber-600" },
-  { icon: Medal, emoji: "🥈", title: "Second Prize", amount: "₹3,000", color: "from-gray-300 to-gray-500" },
-  { icon: Award, emoji: "🥉", title: "Third Prize", amount: "₹2,000", color: "from-amber-600 to-amber-800" },
+  { icon: Trophy, emoji: "🏆", title: "Best Solution: Drones & IoT", amount: "₹3,000", color: "from-green-400 to-green-600" },
+  { icon: Trophy, emoji: "🏆", title: "Best Solution: Farm Implements", amount: "₹3,000", color: "from-green-400 to-green-600" },
+  { icon: Trophy, emoji: "🏆", title: "Best Solution: Water Quality", amount: "₹3,000", color: "from-green-400 to-green-600" },
 ];
 
 
@@ -21,7 +21,7 @@ const PrizesSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white text-center mb-12 sm:mb-16 px-4"
         >
-          Prizes & <span className="text-gradient">Recognition</span>
+          Prizes for <span className="text-gradient">Each Theme</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
@@ -37,6 +37,7 @@ const PrizesSection = () => {
               <span className="text-3xl sm:text-4xl mb-3 sm:mb-4 block">{prize.emoji}</span>
               <h3 className="font-display font-bold text-white text-lg sm:text-xl mb-1 sm:mb-2">{prize.title}</h3>
               <p className="text-agri-green font-display font-bold text-xl sm:text-2xl">{prize.amount}</p>
+              <p className="text-xs text-white/60 mt-2">One prize for the best solution in this theme</p>
             </motion.div>
           ))}
         </div>
@@ -48,7 +49,8 @@ const PrizesSection = () => {
           className="glass-card p-4 sm:p-6 text-center max-w-2xl mx-auto"
         >
           <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
-            🎓 All participants will receive <span className="text-agri-green font-semibold">certificates of participation</span> and opportunities to showcase their projects to industry professionals.
+            🏆 <span className="text-agri-green font-semibold">Each theme</span> will have <span className="text-agri-green font-semibold">one winning team</span> awarded <span className="text-agri-green font-semibold">₹3,000</span>.<br/>
+            🎓 All participants will receive certificates of participation and opportunities to showcase their projects to industry professionals.
           </p>
         </motion.div>
       </div>
