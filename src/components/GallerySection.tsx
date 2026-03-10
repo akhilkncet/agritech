@@ -14,7 +14,7 @@ const GallerySection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="gallery" className="py-16 sm:py-24 lg:py-32 bg-section-dark">
+    <section id="gallery" className="py-8 sm:py-12 lg:py-16 bg-section-dark">
       <div className="max-w-7xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ const GallerySection = () => {
             onMouseEnter={() => setHoveredIndex(0)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <div className="relative w-full h-full min-h-[250px] sm:min-h-[400px] md:min-h-[500px]">
+            <div className="relative w-full h-full min-h-[40px] sm:min-h-[60px] md:min-h-[90px]">
               <img
                 src={images[0]}
                 alt="Gallery featured"
@@ -64,7 +64,7 @@ const GallerySection = () => {
               onMouseEnter={() => setHoveredIndex(i + 1)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="relative w-full h-full aspect-square">
+              <div className="relative w-full h-full aspect-[4/3] min-h-[30px] sm:min-h-[45px] md:min-h-[60px]">
                 <img
                   src={src}
                   alt={`Gallery ${i + 2}`}
