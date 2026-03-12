@@ -72,8 +72,8 @@ const TimelineSection = () => (
       </motion.h2>
 
       <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
-        <TimelineDay title="Day 1 — March 16" events={day1} />
-        <TimelineDay title="Day 2 — March 17" events={day2} delay={0.3} />
+        <TimelineDay title="Day 1 — March 24" events={day1} />
+        <TimelineDay title="Day 2 — March 25" events={day2} delay={0.3} />
       </div>
     </div>
   </section>
